@@ -8,7 +8,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
-  const slug = params.category;
+  const slug = (await params).category;
   const categories = popularCategories(allPosts);
   const currentCategory = categories.find(
     (category) => category.name === slug.split("-").join(" ")
@@ -29,8 +29,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const CategorySingle = ({ params }) => {
-  const slug = params.category;
+const CategorySingle = async ({ params }) => {
+  const slug = (await params).category;
   const posts = allPosts.filter((post) => post.frontmatter.category === slug);
 
   if (!posts) {

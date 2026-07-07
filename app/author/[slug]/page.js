@@ -9,7 +9,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
-  const slug = params.slug;
+  const slug = (await params).slug;
   const currentAuthor = allAuthors.find((author) => author.slug === slug);
 
   if (!currentAuthor) {
@@ -27,8 +27,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const AuthorSingle = ({ params }) => {
-  const slug = params.slug;
+const AuthorSingle = async ({ params }) => {
+  const slug = (await params).slug;
   const currentAuthor = allAuthors.find((author) => author.slug === slug);
 
   if (!currentAuthor) {

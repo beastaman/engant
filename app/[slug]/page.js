@@ -16,7 +16,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
-  const slug = params.slug;
+  const slug = (await params).slug;
   const currentPost = allPosts.find((post) => post.slug === slug);
 
   if (!currentPost) {
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
 }
 
 const BlogDetails = async ({ params }) => {
-  const slug = params.slug;
+  const slug = (await params).slug;
   const currentPost = allPosts.find((post) => post.slug === slug);
 
   if (!currentPost) {
