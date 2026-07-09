@@ -327,7 +327,7 @@ const Home = async () => {
                         </div>
                       )}
 
-                      {trendingPosts.length >= 2 && (
+                      {trendingPosts.length >= 4 && (
                         <div className="lg:col-10 sm:col-6 ml-auto mb-12">
                           <PostThree post={trendingPosts[3]} />
                         </div>

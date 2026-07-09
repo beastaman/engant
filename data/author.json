@@ -12,18 +12,18 @@
     "slug": "kathryn-jackson",
     "frontmatter": {
       "title": "Kathryn Jackson",
-      "subtitle": "Techlogist & Writer",
+      "subtitle": "AI & Cybersecurity Writer",
       "image": "/images/author/kathryn-jackson.jpg"
     },
-    "content": "Kathryn Jackson is a passionate writer with a knack for weaving captivating stories. Her interests span across travel, history, and the culinary arts. When not crafting compelling content, you can find her exploring hidden gems or whipping up delicious meals in her kitchen."
+    "content": "Kathryn Jackson writes about AI, cybersecurity, and consumer tech for Engant, with a focus on what emerging technology actually means for the people and companies using it. She previously worked in enterprise IT before moving to full-time tech journalism."
   },
   {
     "slug": "nilima-nike",
     "frontmatter": {
       "title": "Nilima Nike",
-      "subtitle": "Writer and Storyteller",
+      "subtitle": "Science & Biotech Writer",
       "image": "/images/author/nilima-nike.jpg"
     },
-    "content": "Nilima Nike is a writer with a keen eye for design and a love for storytelling. Her focus lies in fashion, art, and personal development, offering insightful perspectives and inspiring journeys through her words. When not tapping away at her keyboard, Nilima can be found sketching out new ideas or exploring art galleries and museums."
+    "content": "Nilima Nike covers robotics, space, and biotech for Engant, translating dense research papers and mission updates into stories anyone can follow. When not writing, she's usually reading conference proceedings or tracking the next launch window."
   }
 ]

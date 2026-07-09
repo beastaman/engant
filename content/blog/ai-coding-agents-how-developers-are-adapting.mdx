@@ -1,0 +1,36 @@
+---
+published: true
+title: "The Rise of AI Coding Agents: How Developers Are Adapting"
+description: "AI coding agents now handle entire tickets end to end, not just autocomplete, forcing software teams to rethink how they review, test, and ship code."
+image: "/images/blog/post-15.jpg"
+date: "2026-07-06"
+category: software
+author: "Alex Walton"
+featured: true
+trending: true
+---
+
+The first wave of AI coding tools autocompleted a line or a function. The current wave takes a ticket, reads the relevant files, writes the change across multiple files, runs the tests, and opens a pull request, largely unsupervised until a human reviews the result. That's a different category of tool, and it's changing what a software engineer's day actually looks like.
+
+## From Autocomplete to Agent
+
+The shift happened as models got better at holding a large amount of surrounding code in context and reasoning about multi-step changes rather than just predicting the next few tokens. A coding agent today can trace a bug across several files, understand a codebase's existing conventions well enough to match them, and iterate against a real test suite instead of guessing once and stopping.
+
+## What's Actually Changing in Day-to-Day Work
+
+Engineers report spending measurably less time on boilerplate, routine refactors, and well-specified small features, the kind of work that's tedious but not conceptually hard. What hasn't gone away, and by most accounts has gotten more important, is the work of writing a clear specification, reviewing generated code critically, and making the architectural decisions an agent isn't positioned to make well on its own.
+
+## Code Review Is the New Bottleneck
+
+When a single engineer can direct several agents working in parallel, the constraint shifts from "how fast can code get written" to "how fast can it be reviewed and trusted." Teams adopting these tools heavily are investing in better automated testing, stricter CI gates, and smaller, more reviewable pull requests, specifically because a human reviewing AI-generated code carefully takes real time no agent can shortcut.
+
+> The agent writing the code was never the risk. Merging code nobody actually understood is the risk, and that risk existed before AI too.
+<cite>Engineering team lead</cite>
+
+## Junior Developer Roles Are Being Rethought, Not Eliminated
+
+A lot of the work historically given to junior engineers, small well-defined tickets, routine bug fixes, is exactly the work these agents now handle well. That's forcing a real conversation in engineering organizations about how junior developers build judgment and codebase familiarity when the easiest on-ramp tasks are increasingly automated, rather than a simple story of headcount reduction.
+
+## What Doesn't Change
+
+Agents are only as good as the specification and the guardrails around them. Ambiguous requirements produce ambiguous code regardless of who, or what, writes it, and a weak test suite means confident-sounding AI-generated changes can pass review and still break something in production. The tools got dramatically more capable. The fundamentals of good engineering practice became more important, not less.

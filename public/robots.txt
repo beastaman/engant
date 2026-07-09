@@ -1,9 +1,10 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /admin/
 
 # Host
-Host: https://example.com
+Host: https://engant.com
 
 # Sitemaps
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://engant.com/sitemap.xml

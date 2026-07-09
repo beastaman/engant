@@ -18,11 +18,11 @@ export async function generateMetadata({ params }) {
     return notFound();
   }
 
-  const { title, desscription, image } = currentPost.frontmatter;
+  const { title, description, image } = currentPost.frontmatter;
 
   return {
     title: title,
-    description: desscription,
+    description: description,
     openGraph: {
       images: [{ url: image }],
     },

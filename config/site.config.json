@@ -3,11 +3,11 @@
     "title" : "Engant  - The Ultimate Hub for Tech, Science & Innovation Blogs",
     "description" : "Explore in-depth articles, expert tech insights, and breaking science discoveries. Engant is your premier knowledge platform for everything shaping the digital future.",
     "author" : "Beastaman",
-    "keyword" : "minimal",
+    "keyword" : "AI news, robotics, space technology, machine learning, cybersecurity, biotech, quantum computing, climate tech, science news",
     "ogImage" : "/images/ogimage.jpg"
   },
   "baseURL" : "",
-  "siteURL" : "https://engant.vercel.app",
+  "siteURL" : "https://engant.com",
   "logo" : "/images/logo.png",
   "logoWhite" : "/images/logo-white.svg",
   "logoText" : "Engant",
@@ -16,7 +16,7 @@
   "subscriptionFormspreeID" : "xnqeeyyp",
 
   "footerWidgets": {
-    "email" : "beastaman@gmail.com",
+    "email" : "beastaman25@gmail.com",
     "phone" : "+91 (961) 847-7436"
   },
 
@@ -43,5 +43,5 @@
     }
   ],
 
-  "copyright" : "© 2024 Engant, Inc. All rights reserved."
+  "copyright" : "© 2026 Engant, Inc. All rights reserved."
 }

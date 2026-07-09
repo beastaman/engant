@@ -6,6 +6,14 @@ const nextConfig = {
         source: "/rss.xml",
         destination: "/api/rss",
       },
+      {
+        source: "/admin",
+        destination: "/admin/index.html",
+      },
+      {
+        source: "/admin/",
+        destination: "/admin/index.html",
+      },
     ];
   },
 };

@@ -1,4 +1,5 @@
 import TableOfContents from "@/app/components/blog/TableOfContents";
+import AdSlot from "@/components/essential/AdSlot";
 import Layout from "@/components/Layout";
 import MDXcomponents from "@/components/MDXcomponents";
 import ScrollProgressBar from "@/components/blog/ScrollProgressBar";
@@ -23,11 +24,11 @@ export async function generateMetadata({ params }) {
     return notFound();
   }
 
-  const { title, desscription, image } = currentPost.frontmatter;
+  const { title, description, image } = currentPost.frontmatter;
 
   return {
     title: title,
-    description: desscription,
+    description: description,
     openGraph: {
       images: [{ url: image }],
     },
@@ -188,6 +189,9 @@ const BlogDetails = async ({ params }) => {
               <div className="sticky top-16">
                 <TableOfContents />
                 <SharePost title={title} slug={slug} />
+                <div className="mt-8">
+                  <AdSlot slot="0000000000" />
+                </div>
               </div>
             </div>
           </div>

@@ -21,7 +21,7 @@ const SocialLinks = ({ dark, isFooter, border }) => {
     >
       <li>
         <Link
-          href="https://facebook.com/"
+          href="https://www.facebook.com/mohammedaman.nawaz.77//"
           target="_blank"
           aria-label="Check out our Facebook"
           className={`inline-block rounded-full has-transition ${
