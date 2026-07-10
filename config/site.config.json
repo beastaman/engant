@@ -9,7 +9,7 @@
   "baseURL" : "",
   "siteURL" : "https://engant.com",
   "logo" : "/images/logo.png",
-  "logoWhite" : "/images/logo-white.svg",
+  "logoWhite" : "/images/logo.png",
   "logoText" : "Engant",
   "favicon" : "/images/favicon.png",
 
