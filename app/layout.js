@@ -25,6 +25,12 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    other: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
+      : undefined,
+  },
   robots: {
     index: true,
     follow: true,
@@ -50,6 +56,27 @@ export const metadata = {
   },
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${config.siteURL}/#organization`,
+      name: config.logoText,
+      url: config.siteURL,
+      logo: `${config.siteURL}${config.logo}`,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${config.siteURL}/#website`,
+      url: config.siteURL,
+      name: config.metaData.title,
+      description: config.metaData.description,
+      publisher: { "@id": `${config.siteURL}/#organization` },
+    },
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
@@ -57,6 +84,10 @@ export default function RootLayout({ children }) {
       className={`${fontPrata.variable} ${fontLexendDeca.variable}`}
     >
       <body className="font-secondary">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         {adsenseClientId && (
           <Script
             async

@@ -1,5 +1,6 @@
 import TableOfContents from "@/app/components/blog/TableOfContents";
 import AdSlot from "@/components/essential/AdSlot";
+import config from "@/config/site.config.json";
 import Layout from "@/components/Layout";
 import MDXcomponents from "@/components/MDXcomponents";
 import ScrollProgressBar from "@/components/blog/ScrollProgressBar";
@@ -43,8 +44,16 @@ const BlogDetails = async ({ params }) => {
     return notFound();
   }
 
-  const { title, category, image, date, author, authorImage, readingTime } =
-    currentPost.frontmatter;
+  const {
+    title,
+    description,
+    category,
+    image,
+    date,
+    author,
+    authorImage,
+    readingTime,
+  } = currentPost.frontmatter;
 
   const content = await currentPost.content;
 
@@ -54,8 +63,40 @@ const BlogDetails = async ({ params }) => {
   // get first 3 suggested posts
   const suggestedPosts = getSuggestedPosts(allPosts, slug, category);
 
+  const postJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description: description,
+    image: `${config.siteURL}${image}`,
+    datePublished: date,
+    dateModified: date,
+    url: `${config.siteURL}/${slug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${config.siteURL}/${slug}`,
+    },
+    author: {
+      "@type": "Person",
+      name: author,
+      url: `${config.siteURL}/author/${authorSlug}`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: config.logoText,
+      logo: {
+        "@type": "ImageObject",
+        url: `${config.siteURL}${config.logo}`,
+      },
+    },
+  };
+
   return (
     <Layout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(postJsonLd) }}
+      />
       <div id="post-header" className="py-16 sm:py-20 overflow-clip">
         <div className="container">
           <div className="row lg:flex-nowrap items-center">

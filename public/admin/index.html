@@ -2,11 +2,78 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <title>Engant Content Admin</title>
+    <title>Engant Studio</title>
+    <link rel="icon" href="/images/favicon.png" />
     <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&family=Lexend+Deca:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #060c14;
+        color: #e7e5d4;
+        font-family: "Lexend Deca", sans-serif;
+      }
+      #nc-root {
+        min-height: 100vh;
+      }
+      .cms-splash {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      .cms-splash__mark {
+        font-family: "Prata", serif;
+        font-size: 32px;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+      }
+      .cms-splash__mark span {
+        color: #ff4848;
+      }
+      .cms-splash__spinner {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 2.5px solid #26303d;
+        border-top-color: #ff4848;
+        animation: cms-spin 0.8s linear infinite;
+      }
+      .cms-splash__text {
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #9a9890;
+      }
+      @keyframes cms-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .cms-splash__spinner {
+          animation: none;
+        }
+      }
+    </style>
   </head>
   <body>
+    <div id="nc-root">
+      <div class="cms-splash">
+        <div class="cms-splash__mark">Eng<span>ant</span> Studio</div>
+        <div class="cms-splash__spinner"></div>
+        <div class="cms-splash__text">Loading content editor…</div>
+      </div>
+    </div>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="/admin/preview.js"></script>
   </body>
 </html>
