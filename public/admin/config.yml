@@ -22,6 +22,12 @@ collections:
     slug: "{{slug}}"
     extension: "mdx"
     format: "frontmatter"
+    summary: "{{date}} — {{title}}"
+    sortable_fields:
+      fields: ["date", "title"]
+      default:
+        field: "date"
+        direction: "descending"
     fields:
       - { label: "Published", name: "published", widget: "boolean", default: true }
       - { label: "Title", name: "title", widget: "string" }
@@ -71,6 +77,12 @@ collections:
     slug: "{{slug}}"
     extension: "mdx"
     format: "frontmatter"
+    summary: "{{date}} — {{title}}"
+    sortable_fields:
+      fields: ["date", "title"]
+      default:
+        field: "date"
+        direction: "descending"
     fields:
       - { label: "Published", name: "published", widget: "boolean", default: true }
       - { label: "Title", name: "title", widget: "string" }

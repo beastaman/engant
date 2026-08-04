@@ -6,6 +6,7 @@ import AllVideos from "./AllVideos";
 export const metadata = {
   title: "All Video Posts",
   description: "All of Engant's Video Posts",
+  alternates: { canonical: "/videos" },
 };
 
 const Videos = () => {

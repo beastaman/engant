@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 export const metadata = {
   title: privacyData.frontmatter.title,
   description: privacyData.frontmatter.description,
+  alternates: { canonical: "/privacy" },
 };
 
 const Privacy = () => {

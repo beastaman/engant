@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 export const metadata = {
   title: termsData.frontmatter.title,
   description: termsData.frontmatter.description,
+  alternates: { canonical: "/terms" },
 };
 
 const Privacy = () => {

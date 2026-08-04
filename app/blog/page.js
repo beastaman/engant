@@ -5,6 +5,7 @@ import { Suspense } from "react";
 export const metadata = {
   title: "All Blog Posts",
   description: "All of Engant's Blog Posts",
+  alternates: { canonical: "/blog" },
 };
 
 const AllBlog = () => {

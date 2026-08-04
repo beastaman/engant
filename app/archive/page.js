@@ -7,6 +7,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Blog Posts - Archive",
   description: "All of Engant's blog posts by year",
+  alternates: { canonical: "/archive" },
 };
 
 const Archive = () => {

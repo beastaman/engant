@@ -10,6 +10,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Elements | Blog",
   description: "Blog Post - Elements",
+  alternates: { canonical: "/blog/elements" },
 };
 
 const BlogDetails = async () => {

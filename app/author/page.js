@@ -7,6 +7,7 @@ import Link from "next/link";
 export const metadata = {
   title: "All Authors",
   description: "All of Engant's Authors",
+  alternates: { canonical: "/author" },
 };
 
 const Author = () => {

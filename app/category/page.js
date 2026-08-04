@@ -7,6 +7,7 @@ import Link from "next/link";
 export const metadata = {
   title: "All Blog Category",
   description: "All of Engant's Blog Category",
+  alternates: { canonical: "/category" },
 };
 
 const AllCategory = () => {

@@ -21,7 +21,13 @@ export async function generateMetadata({ params }) {
   return {
     title: `${title} | Author`,
     description: `${title} is a ${subtitle}`,
+    alternates: {
+      canonical: `/author/${slug}`,
+    },
     openGraph: {
+      title: `${title} | Author`,
+      description: `${title} is a ${subtitle}`,
+      url: `/author/${slug}`,
       images: [{ url: image }],
     },
   };

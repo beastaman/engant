@@ -6,6 +6,7 @@ import ContactForm from "./ContactForm";
 export const metadata = {
   title: contactPage.frontmatter.title,
   description: contactPage.frontmatter.description,
+  alternates: { canonical: "/contact" },
 };
 
 const Contact = () => {
