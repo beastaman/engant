@@ -1,29 +1,47 @@
 [
   {
-    "slug": "alex-walton",
+    "slug": "aman-nawaz",
     "frontmatter": {
-      "title": "Alex Walton",
+      "title": "Aman Nawaz",
+      "subtitle": "Founder & Editor",
+      "image": "/images/author/its-you.webp"
+    },
+    "content": "Aman Nawaz is the founder and editor of Engant, covering AI, robotics, and the technologies shaping the next decade. He leads editorial direction and writes on the stories that matter most to the Engant community."
+  },
+  {
+    "slug": "arjun-verma",
+    "frontmatter": {
+      "title": "Arjun Verma",
       "subtitle": "Graphic Designer & Blogger",
       "image": "/images/author/alex-walton.jpg"
     },
-    "content": "Alex Walton brings a unique blend of technical expertise and creative flair to his writing. He thrives on delving into the world of science, technology, and gaming, always striving to share knowledge in an engaging way. In his spare time, Alex enjoys tinkering with electronics and exploring the latest virtual realities."
+    "content": "Arjun Verma brings a unique blend of technical expertise and creative flair to his writing. He thrives on delving into the world of science, technology, and gaming, always striving to share knowledge in an engaging way. In his spare time, Arjun enjoys tinkering with electronics and exploring the latest virtual realities."
   },
   {
-    "slug": "kathryn-jackson",
+    "slug": "ayan",
     "frontmatter": {
-      "title": "Kathryn Jackson",
-      "subtitle": "AI & Cybersecurity Writer",
-      "image": "/images/author/kathryn-jackson.jpg"
+      "title": "Ayan",
+      "subtitle": "Space & Climate Tech Writer",
+      "image": "/images/author/its-you.webp"
     },
-    "content": "Kathryn Jackson writes about AI, cybersecurity, and consumer tech for Engant, with a focus on what emerging technology actually means for the people and companies using it. She previously worked in enterprise IT before moving to full-time tech journalism."
+    "content": "Ayan writes about space technology and climate tech for Engant, tracking launches, mission updates, and the engineering behind the shift to cleaner energy."
   },
   {
-    "slug": "nilima-nike",
+    "slug": "divya-nair",
     "frontmatter": {
-      "title": "Nilima Nike",
+      "title": "Divya Nair",
       "subtitle": "Science & Biotech Writer",
       "image": "/images/author/nilima-nike.jpg"
     },
-    "content": "Nilima Nike covers robotics, space, and biotech for Engant, translating dense research papers and mission updates into stories anyone can follow. When not writing, she's usually reading conference proceedings or tracking the next launch window."
+    "content": "Divya Nair covers robotics, space, and biotech for Engant, translating dense research papers and mission updates into stories anyone can follow. When not writing, she's usually reading conference proceedings or tracking the next launch window."
+  },
+  {
+    "slug": "priya-sharma",
+    "frontmatter": {
+      "title": "Priya Sharma",
+      "subtitle": "AI & Cybersecurity Writer",
+      "image": "/images/author/kathryn-jackson.jpg"
+    },
+    "content": "Priya Sharma writes about AI, cybersecurity, and consumer tech for Engant, with a focus on what emerging technology actually means for the people and companies using it. She previously worked in enterprise IT before moving to full-time tech journalism."
   }
 ]

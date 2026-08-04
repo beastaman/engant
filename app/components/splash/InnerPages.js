@@ -500,7 +500,7 @@ const InnerPages = () => {
                   alt="Inner page image"
                 />
                 <Link
-                  href={"/author/kathryn-jackson"}
+                  href={"/author/priya-sharma"}
                   className="absolute w-full h-full bg-secondary/70 top-0 left-0 flex justify-center items-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto duration-200"
                 >
                   <span className="w-12 h-12 rounded-full bg-primary text-white flex justify-center items-center">
