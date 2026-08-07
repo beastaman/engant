@@ -2,6 +2,7 @@ import fs from "fs";
 import { compileMDX } from "next-mdx-remote/rsc";
 import path from "path";
 import readingTime from "reading-time";
+import { slugify } from "./utils/slugify.js";
 const dest_dir = "data";
 
 const sortByDate = (a, b) => {
@@ -20,6 +21,11 @@ const sortByDate = (a, b) => {
   return 0;
 };
 
+const getSlugFromFilename = (filename) => {
+  const baseName = filename.replace(/\.[^/.]+$/, "");
+  return slugify(baseName);
+};
+
 const getPages = async (directory) => {
   try {
     const dirFiles = fs.readdirSync(directory);
@@ -30,7 +36,7 @@ const getPages = async (directory) => {
     }
 
     for (const filename of pages) {
-      const slug = filename.replace(/\.[^/.]+$/, "");
+      const slug = getSlugFromFilename(filename);
       const filePath = path.join(process.cwd(), directory, filename);
       const dirFileContents = fs.readFileSync(filePath, "utf8");
       const content = dirFileContents.replace(/---[\s\S]+?---/, "").trim();
@@ -71,7 +77,7 @@ const getSectionFiles = async (directory, isBlog, authorPages) => {
 
   const returnDirPages = await Promise.all(
     pages.map(async (filename) => {
-      const slug = filename.replace(/\.[^/.]+$/, "");
+      const slug = getSlugFromFilename(filename);
       const filePath = path.join(process.cwd(), directory, filename);
       const dirFileContents = fs.readFileSync(filePath, "utf8");
       const content = dirFileContents.replace(/---[\s\S]+?---/, "").trim();
